@@ -8,6 +8,8 @@ import com.trading.portfolio.kafka.PortfolioEventPublisher;
 import com.trading.portfolio.repository.HoldingRepository;
 import com.trading.portfolio.repository.PnLRepository;
 import com.trading.portfolio.websocket.PortfolioWebSocketHandler;
+import com.trading.portfolio.entity.ProcessedEventEntity;
+import com.trading.portfolio.repository.ProcessedEventRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
@@ -25,6 +27,7 @@ public class PortfolioService {
     private final PnLCalculator pnLCalculator;
     private final PortfolioEventPublisher eventPublisher;
     private final PortfolioWebSocketHandler webSocketHandler;
+    private final ProcessedEventRepository processedEventRepository;
 
     /*
      * Called for EVERY TradeExecutedEvent consumed from Kafka.
@@ -34,13 +37,25 @@ public class PortfolioService {
      */
     @Transactional
     public void processTrade(TradeExecutedEvent event) {
+
+        // IDEMPOTENCY CHECK — skip if already processed
+        if (processedEventRepository.existsById(event.getTradeId())) {
+            log.warn("Skipping already-processed tradeId={}", event.getTradeId());
+            return;
+        }
+
         log.info("Processing trade tradeId={} symbol={} qty={} price={}",
                 event.getTradeId(), event.getSymbol(),
                 event.getQuantity(), event.getExecutionPrice());
 
-        // process both sides of trade
         processBuyerSide(event);
         processSellerSide(event);
+
+        // mark as processed AFTER successful DB writes
+        processedEventRepository.save(ProcessedEventEntity.builder()
+                .eventId(event.getTradeId())
+                .processedAt(System.currentTimeMillis())
+                .build());
     }
 
     // ── Buyer side ─────────────────────────────────────────────────────────

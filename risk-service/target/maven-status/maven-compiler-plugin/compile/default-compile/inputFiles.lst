@@ -1,1 +1,8 @@
+C:\Users\Harsh Kumar\Desktop\Project 2\trade-processing-system\risk-service\src\main\java\com\trading\risk\api\GlobalExceptionHandler.java
+C:\Users\Harsh Kumar\Desktop\Project 2\trade-processing-system\risk-service\src\main\java\com\trading\risk\api\RiskController.java
+C:\Users\Harsh Kumar\Desktop\Project 2\trade-processing-system\risk-service\src\main\java\com\trading\risk\config\KafkaConfig.java
+C:\Users\Harsh Kumar\Desktop\Project 2\trade-processing-system\risk-service\src\main\java\com\trading\risk\kafka\PortfolioUpdateConsumer.java
+C:\Users\Harsh Kumar\Desktop\Project 2\trade-processing-system\risk-service\src\main\java\com\trading\risk\kafka\RiskAlertPublisher.java
 C:\Users\Harsh Kumar\Desktop\Project 2\trade-processing-system\risk-service\src\main\java\com\trading\risk\RiskServiceApplication.java
+C:\Users\Harsh Kumar\Desktop\Project 2\trade-processing-system\risk-service\src\main\java\com\trading\risk\service\RiskEvaluationService.java
+C:\Users\Harsh Kumar\Desktop\Project 2\trade-processing-system\risk-service\src\main\java\com\trading\risk\service\VaRCalculator.java

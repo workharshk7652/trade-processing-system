@@ -5,7 +5,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="487da0c9-607f-4128-9a90-6a5557597f6e" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/target/common-1.0.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/common-1.0.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notifier-service/src/main/java/com/trading/notifier/NotifierServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/notifier-service/src/main/java/com/trading/notifier/NotifierServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notifier-service/src/main/java/com/trading/notifier/api/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/notifier-service/src/main/java/com/trading/notifier/api/GlobalExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notifier-service/src/main/java/com/trading/notifier/api/NotifierController.java" beforeDir="false" afterPath="$PROJECT_DIR$/notifier-service/src/main/java/com/trading/notifier/api/NotifierController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notifier-service/src/main/java/com/trading/notifier/config/KafkaConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/notifier-service/src/main/java/com/trading/notifier/config/KafkaConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notifier-service/src/main/java/com/trading/notifier/config/WebSocketConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/notifier-service/src/main/java/com/trading/notifier/config/WebSocketConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notifier-service/src/main/java/com/trading/notifier/kafka/TradeNotificationConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/notifier-service/src/main/java/com/trading/notifier/kafka/TradeNotificationConsumer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notifier-service/src/main/java/com/trading/notifier/websocket/NotificationWebSocketHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/notifier-service/src/main/java/com/trading/notifier/websocket/NotificationWebSocketHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notifier-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/notifier-service/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notifier-service/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/notifier-service/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notifier-service/target/classes/com/trading/notifier/NotifierServiceApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/notifier-service/target/classes/com/trading/notifier/NotifierServiceApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notifier-service/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/notifier-service/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notifier-service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/notifier-service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notifier-service/target/notifier-service-1.0.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/notifier-service/target/notifier-service-1.0.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notifier-service/target/notifier-service-1.0.0.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/notifier-service/target/notifier-service-1.0.0.jar.original" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/target/order-service-1.0.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/target/order-service-1.0.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/target/order-service-1.0.0.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/target/order-service-1.0.0.jar.original" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio-service/target/portfolio-service-1.0.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio-service/target/portfolio-service-1.0.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio-service/target/portfolio-service-1.0.0.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio-service/target/portfolio-service-1.0.0.jar.original" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/risk-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/risk-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/risk-service/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/risk-service/target/risk-service-1.0.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/risk-service/target/risk-service-1.0.0.jar.original" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +69,7 @@
     "Maven.order-service [clean].executor": "Run",
     "Maven.portfolio-service [clean].executor": "Run",
     "Maven.risk-service [clean].executor": "Run",
+    "Maven.risk-service [install].executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
@@ -51,11 +77,23 @@
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/Harsh Kumar/Desktop/Project 2/trade-processing-system",
-    "project.structure.last.edited": "Project",
+    "project.structure.last.edited": "SDKs",
     "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.0"
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <option name="filePath" />
+      <method v="2" />
+    </configuration>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="487da0c9-607f-4128-9a90-6a5557597f6e" name="Changes" comment="" />
